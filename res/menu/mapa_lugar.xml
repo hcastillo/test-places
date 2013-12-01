@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuNuevoLugar"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/opcion_menu_nuevo_lugar"/>
+    <item
+        android:id="@+id/menuCapas"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="@string/opcion_menu_capas"/>
+
+</menu>

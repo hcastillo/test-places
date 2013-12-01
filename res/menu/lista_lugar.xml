@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menuOrdenarLista"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        android:title="@string/opcion_menu_ordenar_lista">
+    </item>
+    <item
+        android:id="@+id/menuEliminarLista"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/opcion_menu_eliminar_lista">
+    </item>
+
+</menu>

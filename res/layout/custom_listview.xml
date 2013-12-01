@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selector_lista" >
+
+    <ImageView
+        android:id="@+id/imagenListaLugar"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:cropToPadding="true"
+        android:padding="5dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/nombreListaLugar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/imagenListaLugar"
+       	android:ellipsize="marquee"
+        android:maxLines="1"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:freezesText="true"
+       />
+
+    <TextView
+        android:id="@+id/descripcionListaLugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/nombreListaLugar"
+        android:layout_below="@id/nombreListaLugar"
+        android:layout_toRightOf="@id/imagenListaLugar"
+        android:textColor="@color/gris_descripcion_lista"
+                android:freezesText="true"
+        android:hint="Sin descripción"
+       	android:ellipsize="end"
+        android:maxLines="1"
+       android:layout_marginRight="5dp"/>
+
+</RelativeLayout>

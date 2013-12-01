@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--title_activity-->
+    
+    <string name="app_name">Target Places</string>
+    <string name="title_activity_lista_lugar">Lista de Targets</string>
+    <string name="title_activity_mapa_lugar">Mapa de Targets</string>
+    <string name="title_activity_mostrar_lugar">Detalles del Target</string>  
+    <string name="title_activity_editar_lugar">Editar Target</string>
+    <string name="title_activity_nuevo_lugar">Crear nuevo Target</string>
+
+    <!--toasts-->
+    
+ 	<string name="toast_cancelado">Cancelado</string>
+    <string name="toast_insertar_nombre">Hay que insertar un nombre</string>
+    <string name="toast_lugar_editado">Target actualizado con éxito</string>    
+    <string name="toast_lista_vacia">La lista está vacía</string>
+    <string name="toast_eliminar_lista">Se han eliminado todos los Targets</string>
+    <string name="toast_obtener_mapa">No ha sido posible obtener el mapa</string>
+    <string name="toast_nuevo_lugar">Mantén presionado para un nuevo Target</string>
+    <string name="toast_error_ubicacion">No ha sido posible establecer tu ubicación</string>
+    <string name="toast_lugar_eliminado">Target eliminado con éxito</string>
+    <string name="toast_insertar_imagen">Hay que seleccionar una imágen</string>
+    <string name="toast_error_crear_lugar">No ha sido posible crear el Target</string>
+    <string name="toast_lugar_creado">Target creado con éxito</string>  
+    <string name="toast_error_busqueda">Servicio de busqueda no disponible</string>  
+    
+    <!--titulos_dialogs-->
+      
+    <string name="titulo_dialog_seleccionar_imagen">Seleccionar imágen</string>
+    <string name="titulo_dialog_atencion">Atención</string>
+    <string name="titulo_dialog_ordenar">Ordenar por</string>
+    <string name="titulo_dialog_eliminar_lista">Eliminar lista</string>
+    <string name="titulo_dialog_servicios_ubicacion1">Servicios de ubicación desactivados</string>
+    <string name="titulo_dialog_servicios_ubicacion2">Servicios de ubicación desactivados</string>
+    <string name="titulo_dialog_fuentes_ubicacion">Fuentes de ubicación desactivadas</string>
+    <string name="titulo_dialog_coordenadas">Coordenadas</string>
+    <string name="titulo_dialog_eliminar_lugar">Eliminar Target</string>
+	<string name="titulo_dialog_acerca_de">Target Places</string> 
+	<string name="titulo_dialog_seleccionar_capa">Seleccionar capa</string>   
+
+    <!--mensajes_dialogs-->
+    
+    <string name="mensaje_dialog_elegir_opcion">Elige una opción</string>
+    <string name="mensaje_dialog_cambios_realizados">Si sales sin guardar se perderán los cambios realizados\n\n¿Deseas continuar?</string>
+    <string name="mensaje_dialog_datos_introducidos">Si sales sin guardar se perderán los datos introducidos\n\n¿Deseas continuar?</string>
+    <string name="mensaje_dialog_eliminar_lista">Se van a eliminar todos los Targets de la lista\nEste proceso es irreversible\n\n¿Deseas continuar?</string>    
+    <string name="mensaje_dialog_servicios_ubicacion1">Para poder geolocalizarte es necesario activar los servicios de ubicación\n\n¿Quieres activarlos ahora?</string>
+    <string name="mensaje_dialog_fuentes_ubicacion">Para usar esta función es necesario activar una fuente de ubicación\n\nElige una opción</string>
+    <string name="mensaje_dialog_servicios_ubicacion2">Para usar esta función es necesario activar los servicios de ubicación\n\n¿Quieres activarlos ahora?</string>    
+    <string name="mensaje_dialog_latitud">"Latitud: "</string>
+    <string name="mensaje_dialog_longitud">"\nLongitud: "</string>
+    <string name="mensaje_dialog_eliminar_lugar">Se va a eliminar este Target\nEste proceso es irreversible\n\n¿Deseas continuar?</string>    
+    <string name="mensaje_dialog_acerca_de" tools:ignore="Typos">Versión: v1.0\nAutor: Héctor y David :-)</string>   
+    
+    <!--opcion_dialogs-->
+     
+    <string name="opcion_dialog_galeria">Galería</string>
+    <string name="opcion_dialog_camara">Cámara</string>
+    <string name="opcion_dialog_si">Si</string>
+    <string name="opcion_dialog_no">No</string>
+	<string name="opcion_dialog_configuracion">Configuración</string>  
+	<string name="opcion_dialog_omitir">Omitir</string>     
+    <string name="opcion_dialog_WiFi_3G">Wi-Fi - 3G</string> 
+    <string name="opcion_dialog_GPS">GPS</string>
+    <string name="opcion_dialog_aceptar">Aceptar</string>
+   
+    <!--opcion_menu-->
+       
+    <string name="opcion_menu_ordenar_lista">Ordenar</string>
+    <string name="opcion_menu_eliminar_lista">Eliminar</string>
+	<string name="opcion_menu_nuevo_lugar">Nuevo lugar en ubicación actual</string>
+    <string name="opcion_menu_editar_lugar">Editar</string>
+    <string name="opcion_menu_eliminar_lugar">Eliminar</string>
+	<string name="opcion_menu_capas">Capas</string>
+    
+    <!--botones-->
+    
+    <string name="opcion_cancelar">Cancelar</string>
+    <string name="opcion_btn_guardar">Guardar</string>
+    <string name="opcion_btn_ver_en_mapa">Ver en el mapa</string>
+    <string name="opcion_btn_coordenadas">Coordenadas</string>
+
+    <!--textos-->
+    
+    <string name="texto_nombre">Nombre</string>
+    <string name="texto_descripcion">Descripción</string>
+    <string name="texto_sin_descripcion">Sin descripción</string>
+    <string name="texto_checkbox">No volver a mostrar</string>
+    
+    <!--markers-->
+  
+     <string name="marker_nuevo_lugar">Crear nuevo lugar en:</string>
+    
+    <!--arrays-->
+    
+    <string-array name="opcion_dialog_tipo_ordenar">
+        <item>Alfabético (A a Z)</item>
+        <item>Fecha (Más reciente)</item>
+    </string-array> 
+     
+    <string-array name="opcion_dialog_tipo_mapa">
+        <item>Normal</item>
+        <item>Satélite</item>
+        <item>Terreno</item>
+    </string-array>
+             
+</resources>

@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_repeat" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/nombreMostrarLugar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text="@string/texto_nombre"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descripcionMostrarLugar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nombreMostrarLugar"
+            android:background="@drawable/custom_descripcion"
+            android:hint="@string/texto_sin_descripcion"
+            android:minLines="4"
+            android:text="@string/texto_descripcion"
+            android:textColor="@color/blanco" />
+
+        <ImageView
+            android:id="@+id/imagenMostrarLugar"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/descripcionMostrarLugar"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/descripcionMostrarLugar"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imagenMostrarLugar"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RatingBar
+                android:id="@+id/ratingbarMostrarLugar"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:numStars="5"
+                android:stepSize="1.0" />
+
+            <Button
+                android:id="@+id/btnVerEnElMapa"
+                style="@style/boton_style"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/opcion_btn_ver_en_mapa" />
+
+            <Button
+                android:id="@+id/btnCoordenadas"
+                style="@style/boton_style"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/opcion_btn_coordenadas" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

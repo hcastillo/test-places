@@ -1,0 +1,88 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_repeat" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <EditText
+            android:id="@+id/nombreEditarLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:inputType="textCapSentences"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/descripcionEditarLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nombreEditarLugar"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/texto_descripcion"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="3" />
+
+        <ImageView
+            android:id="@+id/imagenEditarLugar"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/descripcionEditarLugar"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:onClick="click"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/descripcionEditarLugar"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/imagenEditarLugar"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RatingBar
+                android:id="@+id/ratingbarEditarLugar"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:stepSize="1.0" />
+
+            <Button
+                android:id="@+id/btnGuardarEditarLugar"
+                style="@style/boton_style"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/opcion_btn_guardar" />
+
+            <Button
+                android:id="@+id/btnCancelarEditarLugar"
+                style="@style/boton_style"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/opcion_cancelar" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

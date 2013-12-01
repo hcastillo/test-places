@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_repeat" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/nombreNuevoLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:ems="10"
+            android:hint="@string/texto_nombre"
+            android:inputType="textCapSentences"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/descripcionNuevoLugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nombreNuevoLugar"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/texto_descripcion"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="3" />
+
+        <ImageView
+            android:id="@+id/imagenNuevoLugar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/descripcionNuevoLugar"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/seleccionar_imagen"
+            android:contentDescription="@null"
+            android:onClick="click"
+            android:scaleType="centerCrop" />
+
+        <RatingBar
+            android:id="@+id/ratingbarNuevoLugar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagenNuevoLugar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="1.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingbarNuevoLugar"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnGuardarNuevoLugar"
+                style="@style/boton_style"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:text="@string/opcion_btn_guardar" />
+
+            <Button
+                android:id="@+id/btnCancelarNuevoLugar"
+                style="@style/boton_style"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="@string/opcion_cancelar" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
